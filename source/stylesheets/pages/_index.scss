@@ -1,0 +1,361 @@
+body {
+    font-family: "roboto";
+}
+header ul li {
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-discovery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+
+    @include media-min(768px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #f8f9fa;
+    }
+
+    @include media-min(992px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #f8f9fa;
+    }
+
+    & div {
+        width: 100%;
+        padding-top: 2%;
+        background-color: #e9ecef;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2%;
+    }
+    & form {
+        display: flex;
+        width: 50%;
+    }
+
+    & form label {
+        margin: auto;
+    }
+
+    & form input {
+        border: none;
+        width: 75%;
+        background-color: #e9ecef;
+    }
+
+    & ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    & li {
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+
+        @include media-min(768px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include media-min(992px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    & li:nth-child(1) {
+        margin-left: 20%;
+        margin-right: 20%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 22px;
+    }
+    & li:nth-child(2) {
+        margin-left: 10%;
+        margin-right: 10%;
+        color: grey;
+        text-align: center;
+    }
+}
+
+.section-functioning {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13%;
+
+    & div h2 {
+        font-size: 20px;
+        margin-bottom: 5%;
+        font-weight: bold;
+        margin-left: 4%;
+        padding-top: 10%;
+    }
+
+    & li {
+        display: flex;
+        background-color: #f2f2f2;
+        width: 90%;
+        height: 60px;
+        border-radius: 15px;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+
+    & ul li span {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 65%;
+    }
+    & ul li svg {
+        color: grey;
+    }
+    & ul li svg {
+        margin: auto;
+    }
+
+    & ul li div {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        color: #ffffff;
+        margin: auto;
+        margin-left: -3%;
+        background-color: $primary_color;
+        border-radius: 50px;
+    }
+
+    & ul li span {
+        text-justify: auto;
+    }
+
+    & ul li div p {
+        display: flex;
+        margin: auto;
+        margin-left: 25%;
+    }
+    & div ul li:hover svg {
+        color: $primary_color;
+    }
+    & div ul li:hover {
+        background-color: #9356dc38;
+    }
+}
+
+.list-restaurant {
+    height: 100%;
+    background-color: #f2f2f2;
+    padding-bottom: 15%;
+    padding-top: 2%;
+    margin-top: 5%;
+
+    & div h2 {
+        font-size: 20px;
+        margin-bottom: 5%;
+        font-weight: bold;
+        margin-left: 4%;
+        padding-top: 15%;
+    }
+
+    & div ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    & div ul h4 {
+        font-size: 20px;
+        margin-bottom: 5%;
+        font-weight: bold;
+    }
+
+    & div ul li a {
+        font-weight: normal;
+        text-decoration: none;
+        color: black;
+    }
+
+    & div ul li {
+        border: solid 1px #f2f2f2;
+        margin-bottom: 5%;
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px #00000026;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    & div ul li div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 4%;
+        line-height: 20px;
+    }
+
+    & div ul li div svg {
+        font-size: 30px;
+        margin-right: 4%;
+    }
+
+    & div ul li p {
+        color: grey;
+        margin-bottom: 4%;
+        font-size: 19px;
+    }
+
+    & div ul li img {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+
+    & div ul li div:nth-child(2),
+    & div ul li p {
+        margin-left: 4%;
+    }
+    & div ul li div:nth-child(1) div {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 35px;
+        width: 25%;
+        background: $tertiare_color;
+        margin-left: 60%;
+        margin-top: 5%;
+    }
+
+    & div ul li div:nth-child(1) div span {
+        margin: auto;
+        color: #17483c;
+    }
+}
+
+.fa-heart {
+    margin-top: auto;
+
+    & path {
+        fill: #fff;
+    }
+}
+
+
+.loader {
+    animation: loader 3s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    z-index: 2;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .loader div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .loader div ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  
+  .loader div ul:nth-child(1) {
+    font-family: Shrikhand;
+  }
+  
+  .loader div ul:nth-child(1) li {
+    margin: 2px;
+  }
+  
+  .loader div ul:nth-child(1) li:nth-child(1) {
+    animation: Bounces 1s;
+    animation-fill-mode: both;
+  }
+  
+  .loader div ul:nth-child(1) li:nth-child(2) {
+    animation: Bounces 1s;
+    animation-fill-mode: both;
+    animation-delay: .2s;
+  }
+  
+  .loader div ul:nth-child(1) li:nth-child(3) {
+    animation: Bounces 1s;
+    animation-fill-mode: both;
+    animation-delay: .3s;
+  
+  }
+  
+  .loader div ul:nth-child(1) li:nth-child(4) {
+    animation: Bounces 1s;
+    animation-fill-mode: both;
+    animation-delay: .4s;
+  }
+  
+  .loader div ul:nth-child(1) li:nth-child(5) {
+    animation: Bounces 1s;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+  }
+  
+  .loader div ul:nth-child(1) li:nth-child(6) {
+    animation: Bounces 1s;
+    animation-fill-mode: both;
+    animation-delay: .6s;
+  }
+  
+  .loader div ul:nth-child(1) li:nth-child(7) {
+    animation: Bounces 1s;
+    animation-fill-mode: both;
+    animation-delay: .7s;
+  }
+  
+  .loader div ul:nth-child(1) li:nth-child(8) {
+    animation: Bounces 1s;
+    animation-fill-mode: both;
+    animation-delay: .8s;
+  }
+  
+  
+  .loader div ul:nth-child(2) {
+    margin-top: 10%;
+    animation-delay: .2s;
+  }
+  
+  .loader div ul:nth-child(2) li {
+    animation: rotation 2s;
+    animation-fill-mode: both;
+    background-color: #99E2D0;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 4px;
+  
+  
+  }
+  

@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.btn-main {
+  height: 40px;
+  border-radius: 40px;
+  color: #ffffff;
+  border: none;
+  box-shadow: 2px 6px 10px #c2c1c1;
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc 80%);
+  margin-bottom: 5%;
+  width: 50%;
+  cursor: pointer;
+}
+
+.order:hover {
+  filter: brightness(1.25);
+}
+
+@keyframes Bounces {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+    height: 30px;
+    width: 30px;
+    background-color: #99E2D0;
+  }
+  25% {
+    transform: rotate(0deg);
+    height: 10px;
+    width: 10px;
+    background-color: #FF79DA;
+  }
+  50% {
+    transform: rotate(0deg);
+    height: 30px;
+    width: 30px;
+    background-color: #9356DC;
+  }
+  75% {
+    transform: rotate(360deg);
+    height: 10px;
+    width: 10px;
+    background-color: #FF79DA;
+  }
+  100% {
+    transform: translateY(0);
+    height: 20px;
+    width: 20px;
+    background-color: #99E2D0;
+  }
+}
+@keyframes loader {
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.fa-heart path {
+  stroke-width: 40;
+  stroke: black;
+  transition: 1.5s;
+}
+
+.fa-heart:hover path {
+  stroke: #ff79da;
+  fill: #ff79da;
+}
+
+header {
+  width: 100%;
+  box-shadow: 0px 0px 9px grey;
+  padding: 20px 0px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    box-shadow: 0px 0px 9px grey;
+    padding: 20px 0px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    width: 100%;
+    box-shadow: 0px 0px 9px grey;
+    padding: 20px 0px;
+  }
+}
+
+.header-content li {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .header-content li {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-content li {
+    display: flex;
+    justify-content: center;
+  }
+}
+.header-content li a {
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+}
+.header-content-logo {
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .header-content-logo {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-content-logo {
+    width: 25%;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 180px;
+  background-color: #303030;
+  color: white;
+  padding-bottom: 8%;
+}
+footer h4 {
+  font-family: Shrikhand;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  font-size: 20px;
+}
+footer ul li {
+  margin-bottom: 4%;
+  font-size: 17px;
+}
+footer h4, footer ul li {
+  margin-left: 4%;
+}
+footer ul li svg {
+  margin-right: 3%;
+}
+footer ul li:nth-child(1) svg {
+  margin-right: 5%;
+}
+
+body {
+  font-family: "roboto";
+}
+
+header ul li {
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-discovery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+@media screen and (min-width: 768px) {
+  .main-discovery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-discovery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+  }
+}
+.main-discovery div {
+  width: 100%;
+  padding-top: 2%;
+  background-color: #e9ecef;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+.main-discovery form {
+  display: flex;
+  width: 50%;
+}
+.main-discovery form label {
+  margin: auto;
+}
+.main-discovery form input {
+  border: none;
+  width: 75%;
+  background-color: #e9ecef;
+}
+.main-discovery ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.main-discovery li {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+@media screen and (min-width: 768px) {
+  .main-discovery li {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-discovery li {
+    display: flex;
+    justify-content: center;
+  }
+}
+.main-discovery li:nth-child(1) {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+}
+.main-discovery li:nth-child(2) {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: grey;
+  text-align: center;
+}
+
+.section-functioning {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13%;
+}
+.section-functioning div h2 {
+  font-size: 20px;
+  margin-bottom: 5%;
+  font-weight: bold;
+  margin-left: 4%;
+  padding-top: 10%;
+}
+.section-functioning li {
+  display: flex;
+  background-color: #f2f2f2;
+  width: 90%;
+  height: 60px;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 4%;
+}
+.section-functioning ul li span {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 65%;
+}
+.section-functioning ul li svg {
+  color: grey;
+}
+.section-functioning ul li svg {
+  margin: auto;
+}
+.section-functioning ul li div {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  margin: auto;
+  margin-left: -3%;
+  background-color: #9356DC;
+  border-radius: 50px;
+}
+.section-functioning ul li span {
+  text-justify: auto;
+}
+.section-functioning ul li div p {
+  display: flex;
+  margin: auto;
+  margin-left: 25%;
+}
+.section-functioning div ul li:hover svg {
+  color: #9356DC;
+}
+.section-functioning div ul li:hover {
+  background-color: #9356dc38;
+}
+
+.list-restaurant {
+  height: 100%;
+  background-color: #f2f2f2;
+  padding-bottom: 15%;
+  padding-top: 2%;
+  margin-top: 5%;
+}
+.list-restaurant div h2 {
+  font-size: 20px;
+  margin-bottom: 5%;
+  font-weight: bold;
+  margin-left: 4%;
+  padding-top: 15%;
+}
+.list-restaurant div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-restaurant div ul h4 {
+  font-size: 20px;
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+.list-restaurant div ul li a {
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+}
+.list-restaurant div ul li {
+  border: solid 1px #f2f2f2;
+  margin-bottom: 5%;
+  width: 90%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px #00000026;
+  list-style-type: none;
+  text-decoration: none;
+}
+.list-restaurant div ul li div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4%;
+  line-height: 20px;
+}
+.list-restaurant div ul li div svg {
+  font-size: 30px;
+  margin-right: 4%;
+}
+.list-restaurant div ul li p {
+  color: grey;
+  margin-bottom: 4%;
+  font-size: 19px;
+}
+.list-restaurant div ul li img {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.list-restaurant div ul li div:nth-child(2), .list-restaurant div ul li p {
+  margin-left: 4%;
+}
+.list-restaurant div ul li div:nth-child(1) div {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 35px;
+  width: 25%;
+  background: #99E2D0;
+  margin-left: 60%;
+  margin-top: 5%;
+}
+.list-restaurant div ul li div:nth-child(1) div span {
+  margin: auto;
+  color: #17483c;
+}
+
+.fa-heart {
+  margin-top: auto;
+}
+.fa-heart path {
+  fill: #fff;
+}
+
+.loader {
+  animation: loader 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  z-index: 2;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.loader div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.loader div ul {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.loader div ul:nth-child(1) {
+  font-family: Shrikhand;
+}
+
+.loader div ul:nth-child(1) li {
+  margin: 2px;
+}
+
+.loader div ul:nth-child(1) li:nth-child(1) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+}
+
+.loader div ul:nth-child(1) li:nth-child(2) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(3) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(4) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.4s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(5) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(6) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(7) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.7s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(8) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.8s;
+}
+
+.loader div ul:nth-child(2) {
+  margin-top: 10%;
+  animation-delay: 0.2s;
+}
+
+.loader div ul:nth-child(2) li {
+  animation: rotation 2s;
+  animation-fill-mode: both;
+  background-color: #99E2D0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 4px;
+}
+
+/*# sourceMappingURL=index.css.map */

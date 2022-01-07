@@ -1,0 +1,176 @@
+body {
+  font-family: roboto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-restaurant {
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.menu-restaurant h2 {
+  font-family: Shrikhand;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-restaurant svg {
+  font-size: 25px;
+  color: black;
+}
+
+.fa-heart path {
+  fill: #dfdfdf7a;
+}
+
+.restaurant-image {
+  background-repeat: no-repeat;
+  height: 200px;
+  background-size: cover;
+}
+
+.palette-du-gout {
+  background-image: url("assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.delice-des-sens{
+  background-image: url("assets/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.a-la-francaise{
+  background-image: url("assets/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.la-note-enchantee {
+  background-image: url("assets/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+main {
+  background-color: #f2f2f2;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.menus {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 3%;
+  margin-top: -14%;
+
+  & button {
+    margin-top: 7%;
+    margin-left: 25%;
+    margin-bottom: 15%;
+  }
+
+
+  & section {
+    margin-top: 8%;
+  }
+
+  & section h3 {
+    margin-bottom: 4%;
+    border-bottom: 2px solid $tertiare_color;
+    width: 10%;
+    font-weight: lighter;
+  }
+
+  & ul li {
+    flex: 1;
+    min-width: 0;
+    border: solid 0 #f2f2f2;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    animation: itemAppear 0.6s;
+    animation-fill-mode: both;
+    transform: scale(0);
+    box-shadow: 2px 6px 10px #c2c1c1;
+    margin-bottom: 4%;
+  }
+
+  & ul li div h4,
+  & ul li div span {
+    font-weight: bold;
+  }
+
+  & ul li div p {
+    font-weight: lighter;
+  }
+
+  & ul li div:nth-child(1) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 35px;
+    height: auto;
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  & ul li div:nth-child(1) div {
+    display: flex;
+    margin-right: 2%;
+  }
+
+  & ul li div:nth-child(1) div p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    margin-right: 15%;
+  }
+
+  & ul li div:nth-of-type(2) {
+    background-color: $tertiare_color;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    color: white;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    transition: 500ms;
+  }
+
+  & ul li:hover div:nth-of-type(2) {
+    background-color: $tertiare_color;
+    transform: scale(1);
+    transform-origin: 50% 0%;
+    transition: 800ms;
+    width: 20%;
+  }
+
+  & ul li div svg {
+    opacity: 0;
+    font-size: 1rem;
+    transition: 700ms;
+    position: absolute;
+    bottom: 25px;
+  }
+  & ul li:hover div svg {
+    transform: rotate(-360deg);
+    opacity: 1;
+    font-size: 20px;
+    transition: 400ms;
+  }
+}
+
+.menu h3 {
+  text-transform: uppercase;
+  padding-bottom: 2%;
+}
